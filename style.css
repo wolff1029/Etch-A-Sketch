@@ -1,28 +1,28 @@
-html, body {
-    height: 100%;
-    
-  }
-  .container {
-    border: 1px solid #000;
-    background-color: grey;
-    min-height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-  }
-  .container > div {
-    display: flex; 
-    flex-basis: 6.25%;  
-    justify-content: center;
-    flex-direction: column;
-  }
-  .container > div > div {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
+html, body, .container {
+  width: 100vw;
+  height: 100vh;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+}
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
 
-  }
-  /* .container > div > div:hover {
-    background-color: #AD310B;
-  } */
-  
+#squareBtn{
+  margin-bottom: 10px;
+
+}
+
+.square{
+  border: 1px solid red;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 10px;
+}
+.square:hover {
+  background-color: black;
+}
